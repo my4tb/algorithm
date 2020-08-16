@@ -1,4 +1,4 @@
-package com.my4tb.algorithm;
+package com.my4tb.algorithm.zuo;
 
 public class KMP {
 
