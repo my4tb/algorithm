@@ -18,6 +18,13 @@ public class 堆排序 {
         }
     }
 
+    /**
+     * 某个元素发生变化，元素下沉的过程，如果是大根堆，将变化的元素和孩子元素比较，
+     * 与较大的孩子交换位置，直到变化的元素比所有孩子元素值都大。
+     * @param nums
+     * @param idx
+     * @param heapSize
+     */
     public void heapify(int[] nums, int idx, int heapSize) {
         int left = idx * 2 + 1;
         while (left < heapSize) {
