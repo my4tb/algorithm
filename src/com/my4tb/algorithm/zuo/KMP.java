@@ -4,7 +4,7 @@ public class KMP {
 
     public static void main(String[] args) {
         KMP kmp = new KMP();
-        System.out.println(kmp.isSub("abca", ""));
+        System.out.println(kmp.isSub("mississippi", "issip"));
     }
 
     public boolean isSub(String s, String p) {
@@ -37,7 +37,7 @@ public class KMP {
         next[1] = 0;
         int idx = 2, cn = 0;
         while (idx < chars.length) {
-            if (chars[idx] == chars[cn])
+            if (chars[idx - 1] == chars[cn])
                 next[idx++] = ++cn;
             else if (next[cn] != -1)
                 cn = next[cn];
