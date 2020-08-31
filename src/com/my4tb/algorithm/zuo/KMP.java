@@ -4,7 +4,7 @@ public class KMP {
 
     public static void main(String[] args) {
         KMP kmp = new KMP();
-        System.out.println(kmp.isSub("mississippi", "issip"));
+        System.out.println(kmp.sub("mississippi", "issipa"));
     }
 
     public boolean isSub(String s, String p) {
@@ -36,6 +36,46 @@ public class KMP {
         next[0] = -1;
         next[1] = 0;
         int idx = 2, cn = 0;
+        while (idx < chars.length) {
+            if (chars[idx - 1] == chars[cn])
+                next[idx++] = ++cn;
+            else if (next[cn] != -1)
+                cn = next[cn];
+            else
+                next[idx++] = 0;
+        }
+        return next;
+    }
+
+    public boolean sub(String s, String p) {
+        boolean result = false;
+        if (s.length() >= p.length()) {
+            char[] sChars = s.toCharArray();
+            char[] pChars = p.toCharArray();
+            int[] next = next(pChars);
+            int i = 0, j = 0;
+            while (i < sChars.length && j < pChars.length) {
+                if (sChars[i] == pChars[j]) {
+                    i++;
+                    j++;
+                }
+                else if (next[j] != -1)
+                    j = next[j];
+                else
+                    i++;
+            }
+            result = j >= pChars.length;
+        }
+        return result;
+    }
+
+    public int[] next(char[] chars) {
+        if (chars.length == 1)
+            return new int[] {-1};
+        int[] next = new int[chars.length];
+        next[0] = -1;
+        next[1] = 0;
+        int cn = 0, idx = 2;
         while (idx < chars.length) {
             if (chars[idx - 1] == chars[cn])
                 next[idx++] = ++cn;
