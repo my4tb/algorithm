@@ -10,8 +10,8 @@ public class _8Queens {
         _8Queens queens = new _8Queens();
         int n = 8;
         List<List<String>> result = queens.solveNQueens(n);
-        System.out.println("result.size() = " + result.size());
-        result.forEach(r -> r.forEach(System.out::println));
+//        System.out.println("result.size() = " + result.size());
+//        result.forEach(r -> r.forEach(System.out::println));
     }
 
     private List<List<String>> solveNQueens(int n) {
@@ -19,6 +19,10 @@ public class _8Queens {
         int[] position = new int[n];
         Arrays.fill(position, -1);
         dfs(0, n, position, result);
+        result.forEach(r -> {
+            r.forEach(System.out::println);
+            System.out.println("---------------------");
+        });
         return result;
     }
 

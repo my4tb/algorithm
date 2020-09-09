@@ -1,15 +1,24 @@
-import java.util.Scanner;
+import java.util.PriorityQueue;
+import java.util.Queue;
 
 public class Solution {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int n = scanner.nextInt();
-        int count = 0;
-        while (n != 0) {
-            count++;
-            n &= (n - 1);
+        Solution solution = new Solution();
+        System.out.println(solution.lastStoneWeight(new int[]{2, 7, 4, 1, 8, 1}));
+    }
+    public int lastStoneWeight(int[] stones) {
+        Queue<Integer> queue = new PriorityQueue<>((o1, o2) -> o2 - o1);
+        for (int stone : stones)
+            queue.add(stone);
+        while (queue.size() > 1) {
+            int a = queue.poll();
+            int b = queue.poll();
+            int c = a - b;
+            if (c != 0)
+                queue.add(c);
         }
-        System.out.println(count);
-        scanner.close();
+        if (queue.size() == 0)
+            return 0;
+        return queue.peek();
     }
 }
