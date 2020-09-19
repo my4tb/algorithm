@@ -9,7 +9,7 @@ public class CoinChange {
 
     public static void main(String[] args) {
         CoinChange coinChange = new CoinChange();
-        System.out.println(coinChange.coinChange1(new int[]{1, 2, 5}, 6));
+        System.out.println(coinChange.coinChange1(new int[]{2, 5, 10, 1}, 27));
         System.out.println("---------------------");
         System.out.println(coinChange.coinChange(new int[]{1, 2, 5}, 6));
     }
@@ -18,11 +18,14 @@ public class CoinChange {
         int[][] dp = new int[coins.length + 1][amount + 1];
         for (int i = 0; i < dp.length; i++) {
             Arrays.fill(dp[i], -1);
-            dp[i][0] = 0;
+            dp[i][0] = 0; // 金额为0，不能由硬币组成
         }
         for (int i = 1; i <= coins.length; i++) {
             for (int j = 1; j <= amount; j++) {
                 for (int k = 0; k * coins[i - 1] <= j; k++) {
+                    /*
+                        选择k枚当前硬币，但是之前的硬币无法组成金额为j - k * coins[i - 1]额度，因此当前额度也无法组合成功。
+                     */
                     if (dp[i - 1][j - k * coins[i - 1]] == -1)
                         continue;
                     if (dp[i][j] == -1)
