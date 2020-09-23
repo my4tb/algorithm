@@ -1,27 +1,20 @@
-import java.util.Arrays;
-
 public class Solution {
 
     public static void main(String[] args) {
         Solution solution = new Solution();
-        System.out.println(solution.singleNumber(new int[]{9,1,7,9,7,9,7}));
+        System.out.println(solution.findLength(new int[]{1, 2, 3, 2, 1}, new int[]{3, 2, 1, 4, 7}));
     }
 
-    public int singleNumber(int[] nums) {
-        int[] countBits = new int[32];
-        for (int num : nums) {
-            int time = 1;
-            for (int i = 0; i < 32; i++) {
-                if ((num & (time << i)) != 0)
-                    countBits[i]++;
+    public int findLength(int[] A, int[] B) {
+        int[][] f = new int[A.length + 1][B.length + 1];
+        for (int i = 1; i <= A.length; i++)
+            for (int j = 1; j <= B.length; j++) {
+                if (A[i - 1] == B[j - 1])
+                    f[i][j] = f[i - 1][j - 1] + 1;
+                else
+                    f[i][j] = Math.max(f[i - 1][j], f[i][j - 1]);
             }
-        }
-        int res = 0;
-        for (int i = 31; i >= 0; i--) {
-            res <<= 1;
-            res += (countBits[i] % 3);
-        }
-        return res;
+        return f[A.length][B.length];
     }
 
 }
