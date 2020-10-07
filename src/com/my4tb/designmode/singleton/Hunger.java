@@ -2,6 +2,8 @@ package com.my4tb.designmode.singleton;
 
 /**
  * 类加载时完成初始化，导致类加载较慢，但是避免了线程安全问题，获取对象速度较快。
+ *
+ * 虚拟机类加载阶段保证线程安全问题。
  */
 public class Hunger {
 
