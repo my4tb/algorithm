@@ -2,6 +2,9 @@ package com.my4tb.algorithm.zuo;
 
 /**
  * leetcode:295
+ *
+ * 删除堆中的某个元素时，假设这个元素的下标为idx，首先将idx堆中最后一个元素swap，
+ * 然后heapSize值减一，并将交换后的下标为idx的元素heapify。
  */
 public class 堆排序 {
 
@@ -10,6 +13,9 @@ public class 堆排序 {
      * 对于一个长度为n的数组nums，所有元素都插入一遍，时间复杂
      * 度为O(log1 + log2 + ... + log(n - 1) + logn) = O(n)，
      * 即建立堆的过程时间复杂度为O(n)。
+     *
+     * 完全二叉树性质：某个节点在数组中的下标为idx，那么其父节点在数组中的下标为(idx - 1) / 2。
+     * 建堆的过程中，就是将元素不断插入。插入一个元素时，若该元素比父节点的值还大/小，就交换，直到满足堆的条件。
      */
     public void heapInsert(int idx, int[] nums) {
         while (nums[idx] > nums[(idx - 1) / 2]) {
