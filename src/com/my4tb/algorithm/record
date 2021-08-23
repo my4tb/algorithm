@@ -2,3 +2,5 @@ package algorithm
 
 format by this:
 date, platform, No. name
+
+2021.8.23, lintcode, 1. A+B问题
