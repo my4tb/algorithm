@@ -1,6 +1,10 @@
 package algorithm
 
 format by this:
-date, platform, No. name
+date, platform, No. name, problem if have
 
-2021.8.23, lintcode, 1. A+B问题
+2021.8.23, lintcode, 1.    A+B问题
+
+2021.8.25, lintcode, 76.   最长子序列
+
+2021.8.25, lintcode, 602.  俄罗斯套娃信封, timeout
