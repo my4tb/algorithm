@@ -11,7 +11,7 @@ public class _513 {
      *
      * 利用 dp 方式，大数求解空间占用较高，可以根据 四平方和定理 求解
      */
-    public static int numSquares(int n) {
+    private static int numSquares(int n) {
         // write your code here
         if (n <= 0)
             return 0;
@@ -28,6 +28,7 @@ public class _513 {
 
     public static void main(String[] args) {
         System.out.println(numSquares(1000000000));
+        System.out.println(numSquares(100000000));
     }
 
 }

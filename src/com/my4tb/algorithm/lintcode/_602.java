@@ -7,7 +7,7 @@ public class _602 {
     /**
      * 思路类似最长子序列，但是需要先对二维数组排序
      */
-    public static int maxEnvelopes(int[][] envelopes) {
+    private static int maxEnvelopes(int[][] envelopes) {
         // write your code here
         if (envelopes == null || envelopes.length == 0)
             return 0;
