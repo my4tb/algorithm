@@ -1,7 +1,7 @@
 package algorithm
 
 format by this:
-idx, date, platform, No. name, problem if have
+idx, date, platform, No. name[type], problem if have
 
 1, 2021.08.23, lintcode, 1.    A+B问题
 
@@ -18,3 +18,5 @@ idx, date, platform, No. name, problem if have
 7, 2021.09.05, lintcode, 136.  分割回文串I
 
 8, 2021.09.05, lintcode, 437.  书籍复印
+
+9, 2021.09.06, lintcode, 394.  硬币排成线[博弈]
