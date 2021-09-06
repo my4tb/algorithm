@@ -1,14 +1,20 @@
 package algorithm
 
 format by this:
-date, platform, No. name, problem if have
+idx, date, platform, No. name, problem if have
 
-2021.8.23, lintcode, 1.    A+B问题
+1, 2021.08.23, lintcode, 1.    A+B问题
 
-2021.8.25, lintcode, 76.   最长子序列
+2, 2021.08.25, lintcode, 76.   最长子序列
 
-2021.8.25, lintcode, 602.  俄罗斯套娃信封, timeout
+3, 2021.08.25, lintcode, 602.  俄罗斯套娃信封, timeout
 
-2021.8.26, lintcode, 513.  完美平方
+4, 2021.08.26, lintcode, 513.  完美平方
 
-2021.8.31, lintcode, 108.  分割回文串II, 待优化
+5, 2021.08.28, lintcode, 22.   列表扁平化
+
+6, 2021.09.02, lintcode, 108.  分割回文串II
+
+7, 2021.09.05, lintcode, 136.  分割回文串I
+
+8, 2021.09.05, lintcode, 437.  书籍复印
