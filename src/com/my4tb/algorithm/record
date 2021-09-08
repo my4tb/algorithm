@@ -24,3 +24,7 @@ idx, date, platform, No. name[type], problem if have
 10, 2021.09.07, lintcode, 92.   背包问题[背包]
 
 11, 2021.09.07, lintcode, 563.  背包问题V[背包]
+
+12, 2021.09.08, lintcode, 669.  换硬币
+
+13, 2021.09.08, lintcode, 564.  组合总和IV[背包]

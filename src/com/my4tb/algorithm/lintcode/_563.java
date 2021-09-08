@@ -1,7 +1,5 @@
 package com.my4tb.algorithm.lintcode;
 
-import java.util.Arrays;
-
 public class _563 {
 
     /**
