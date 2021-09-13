@@ -7,7 +7,7 @@ public class _669 {
      * @param amount: a total amount of money amount
      * @return: the fewest number of coins that you need to make up
      */
-    public static int coinChange(int[] coins, int amount) {
+    private static int coinChange(int[] coins, int amount) {
         // write your code here
         if (coins == null || coins.length == 0 || amount < 0)
             return -1;
