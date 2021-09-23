@@ -41,6 +41,10 @@ idx, date, platform, No. name[type], problem if have
 
 19, 2021.09.17, lintcode, 430.  攀爬字符串[区间], wrong
 
+20, 2021.09.22, lintcode, 77.   最长公共子序列[双序列]
+
+21, 2021.09.22, lintcode, 29.   交叉字符串[双序列]
+
 
 
 
