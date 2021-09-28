@@ -24,8 +24,8 @@ public class _668 {
             for (int j = 0; j <= m; j++) { // 0
                 for (int k = 0; k <= n; k++) { // 1
                     f[i][j][k] = f[i - 1][j][k];
-                    if (j >= count0 && k >= count1)
-                        f[i][j][k] = Math.max(f[i][j][k], f[i - 1][j - count0][k - count1] + 1); // 第一维度只取i-1，优化
+                    if (j >= count0 && k >= count1) // todo, optimize
+                        f[i][j][k] = Math.max(f[i][j][k], f[i - 1][j - count0][k - count1] + 1);
                 }
             }
         }
