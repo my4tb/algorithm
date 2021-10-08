@@ -55,6 +55,10 @@ idx, date, platform, No. name[type], problem if have
 
 26, 2021.09.28, lintcode, 668.  一和零
 
+27, 2021.10.08, lintcode, 91.   最小调整代价
+
+28, 2021.10.08, lintcode, 89.   K数之和[背包], to optimize by roll array
+
 
 
 
