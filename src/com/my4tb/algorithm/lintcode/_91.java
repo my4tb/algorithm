@@ -1,6 +1,5 @@
 package com.my4tb.algorithm.lintcode;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
