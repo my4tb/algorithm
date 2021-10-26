@@ -57,13 +57,15 @@ idx, date, platform, No. name[type], problem if have
 
 27, 2021.10.08, lintcode, 91.   最小调整代价
 
-28, 2021.10.08, lintcode, 89.   K数之和[背包], to optimize by roll array
+28, 2021.10.08, lintcode, 89.   K数之和[背包]
 
 29, 2021.10.10, leetcode, 208.  前缀树
 
 30, 2021.10.20, lintcode, 623.  K步编辑[双序列][lintcode-119延伸]
 
+31, 2021.10.26, lintcode, 516.  房屋染色II
 
+32, 2021.10.26, leetcode, 496.  下一个更大元素I[单调栈], to summarize monotonous stack
 
 
 
