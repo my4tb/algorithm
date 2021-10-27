@@ -71,6 +71,7 @@ idx, date, platform, No. name[type], problem if have
 
 34, 2021.10.26, leetcode, 496.  下一个更大元素I[单调栈], to summarize monotonous stack
 
+35, 2021.10,27, leetcode, 402.  移掉k位数字[单调栈]
 
 
 
