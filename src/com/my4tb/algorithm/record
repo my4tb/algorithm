@@ -77,9 +77,15 @@ idx, date, platform, No. name[type], problem if have
 
 37, 2021.10.28, leetcode, 42.   接雨水[单调栈]
 
+38, 2021.10.30, leetcode, 674.  最长连续递增序列
 
+39, 2021.10.30, leetcode, 64.   最小路径和
 
+40, 2021.10.30, leetcode, 338.  比特位计数
 
+41, 2021.10.30, leetcode, 198.  打家劫舍
+
+42, 2021.10.30, leetcode, 213.  打家劫舍II
 
 
 
