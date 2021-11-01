@@ -26,6 +26,14 @@ public class RGYLight {
 
         RGYLight light = new RGYLight();
 
+        new Thread(() -> {
+            try {
+                light.car();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }).start();
+
         // red light
         new Thread(() -> {
             try {
@@ -57,9 +65,11 @@ public class RGYLight {
     }
 
     private void car() throws InterruptedException {
-        while (running) {
-            System.out.println("a car passed");
-            Thread.sleep(1_000);
+        while (true) {
+            if (running) {
+                System.out.println("a car passed");
+                Thread.sleep(1_000);
+            }
         }
     }
 
