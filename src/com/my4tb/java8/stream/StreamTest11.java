@@ -1,4 +1,4 @@
-package com.my4tb.java8stream;
+package com.my4tb.java8.stream;
 
 import java.util.stream.Collectors;
 import java.util.stream.Stream;

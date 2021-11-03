@@ -1,4 +1,4 @@
-package com.my4tb.java8stream;
+package com.my4tb.java8.stream;
 
 import java.util.Arrays;
 import java.util.List;
