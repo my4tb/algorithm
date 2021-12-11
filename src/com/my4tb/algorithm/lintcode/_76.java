@@ -31,6 +31,10 @@ public class _76 {
 
     /**
      * 采用辅助数组的方法
+     *
+     * 总体思路是，使最长子序列的上升速度最慢
+     * f[i]表示长度为i+1的最长子序列的最后一个元素的值
+     * f需要严格递增
      */
     private static int longestIncreasingSubsequenceOptimized(int[] nums) {
         if (nums == null || nums.length == 0)
