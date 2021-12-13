@@ -49,7 +49,7 @@ public class _132 {
 
     public static void main(String[] args) {
         boolean[][] palindromeState = palindromeState("aaba");
-        for (var s : palindromeState)
+        for (boolean[] s : palindromeState)
             System.out.println(Arrays.toString(s));
 
         System.out.println(minCut("abc"));
