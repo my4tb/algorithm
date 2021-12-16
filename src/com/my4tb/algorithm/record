@@ -121,5 +121,9 @@ idx, date, platform, No. name[type], problem if have
 
 59, 2021.12.14, leetcode, 746.  使用最小花费爬楼梯
 
+60, 2021.12.16, leetcode, 1646. 获取生成数组中的最大值
+
+61, 2021.12.16, leetcode, LCP07.传递信息
+
 
 

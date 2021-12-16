@@ -1,7 +1,5 @@
 package com.my4tb.algorithm.leetcode;
 
-import java.util.Arrays;
-
 public class _746 {
 
     /**
